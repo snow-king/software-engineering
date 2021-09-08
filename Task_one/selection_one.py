@@ -16,5 +16,5 @@ def selection_subtask_1():
     elif answer == 2:
         pass
     else:
-        print("unknown request, please enter correct data")
+        print("unknown request (｡╯︵╰｡) \nplease enter correct data")
         selection_subtask_1()
