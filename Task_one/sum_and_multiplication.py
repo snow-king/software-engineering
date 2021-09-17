@@ -12,13 +12,24 @@ class Num(object):
     # I know what is so stupid , but I needed to add this method :D
     def sum(self):
         self.sumNumbers = sum(self.numbers)
+        return self.sumNumbers
 
     # I now what in Python 3.0+ not recommended use reduce, but this is more convenient than writing it all through a
     # loop
     def multiplication(self):
-        self.multiplyNumbers = reduce(lambda x, y: x * y, self.numbers)
+        try:
+            self.multiplyNumbers = reduce(lambda x, y: x * y, self.numbers)
+            return self.multiplyNumbers
+        except ValueError:
+            print("the input string contains letters or is empty")
 
-    def getNumbers(self):
+    def getNumbers(self, answer):
+        try:
+            self.numbers = list(map(int, answer.split()))
+        except ValueError:
+            print("input string the input string contains letters")
+
+    def getNumbersInput(self):
         print("Please, enter a sequence of numbers separated by a space \nExample: 1 2 3 4 5")
         answer = input() + ' '
         # print(re.search(r'[a-zA-Z]+', answer))
@@ -26,10 +37,9 @@ class Num(object):
             self.numbers = list(map(int, answer.split()))
             print(self.numbers)
         else:
-            self.getNumbers()
+            self.getNumbersInput()
 
     def run(self):
-        self.getNumbers()
         print("Please select : \n1. Sum \n2. Multiplication")
         answer = str(input())
         if answer == "1":
@@ -43,4 +53,4 @@ class Num(object):
 
 
 example = Num()
-example.run()
+example.getNumbers("1 2 3 4 5")

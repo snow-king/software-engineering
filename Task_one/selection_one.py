@@ -1,8 +1,10 @@
+from Task_one.sum_and_multiplication import Num
 from Task_one.validation import validation
 
 
 def selection_subtask_1():
     valid = validation("kawabanga!")
+    num = Num()
     subtask = [
         "1: Validation Password",
         "2: Addition and multiplication"
@@ -12,9 +14,9 @@ def selection_subtask_1():
     if answer == "exit":
         print("Goodbye , Samurai (っ˘̩╭╮˘̩)っ")
     elif answer == 1:
-        valid.run()
+        valid.setInput()
     elif answer == 2:
-        pass
+        num.run()
     else:
         print("unknown request (｡╯︵╰｡) \nplease enter correct data")
         selection_subtask_1()

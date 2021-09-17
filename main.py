@@ -4,6 +4,7 @@ from Task_one.selection_one import selection_subtask_1
 def select():
     tasks = [
         '1: Git and Basic tools'
+        '2: Tests'
     ]
     print("Please select task for work:")
     for item in tasks:
