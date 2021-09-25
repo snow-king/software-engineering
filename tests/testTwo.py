@@ -3,6 +3,9 @@ from Task_one.sum_and_multiplication import Num
 
 
 class MyTestCase(unittest.TestCase):
+    """ test for task 1.2  """
+
+    # this method is loaded ahead of the tests
     def setUp(self):
         self.password = Num()
 

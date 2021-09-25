@@ -3,7 +3,7 @@ from Task_one.validation import validation
 
 
 class TestValidation(unittest.TestCase):
-    """ test for   """
+    """ test for task 1.1  """
 
     def setUp(self):
         self.password = validation("kawabanga!")
@@ -12,13 +12,13 @@ class TestValidation(unittest.TestCase):
         self.assertEqual(self.password.setInput("kawabanga!"), False)
 
     def test_wrong(self):
-        self.assertEqual(self.password.setInput("sure?"), False)
+        self.assertEqual(self.password.setInput("sure?"), True)
 
     def test_empty(self):
-        self.assertEqual(self.password.setInput(""), False)
+        self.assertEqual(self.password.setInput(""), True)
 
     def test_drop(self):
-        self.assertFalse(self.password.setInput("DROP TABLE USER"))
+        self.assertTrue(self.password.setInput("DROP TABLE USER"))
 
 
 if __name__ == '__main__':
