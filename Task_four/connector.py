@@ -28,4 +28,5 @@ class DB_connector(object):
 if __name__ == '__main__':
     db = DB_connector("127.0.0.1", "root", "", "software_engineering")
     connect = db.create_connection()
+
     connect.close()
