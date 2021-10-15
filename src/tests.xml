@@ -1,83 +1,73 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<dataset>
-	<record>
+<tests>
+	<test>
 		<id>1</id>
 		<id_p>1</id_p>
 		<laboratory_identifier>539481680-8</laboratory_identifier>
 		<date>03/24/2021</date>
-		<gender>Non-binary</gender>
 		<type>IgG</type>
-	</record>
-	<record>
+	</test>
+	<test>
 		<id>2</id>
 		<id_p>2</id_p>
 		<laboratory_identifier>580267295-1</laboratory_identifier>
 		<date>09/01/2021</date>
-		<gender>Genderfluid</gender>
 		<type>IgG</type>
-	</record>
-	<record>
+	</test>
+	<test>
 		<id>3</id>
 		<id_p>3</id_p>
 		<laboratory_identifier>704057848-4</laboratory_identifier>
 		<date>05/22/2021</date>
-		<gender>Female</gender>
 		<type>IgG</type>
-	</record>
-	<record>
+	</test>
+	<test>
 		<id>4</id>
 		<id_p>4</id_p>
 		<laboratory_identifier>395146251-5</laboratory_identifier>
 		<date>03/29/2021</date>
-		<gender>Genderqueer</gender>
 		<type>IgM</type>
-	</record>
-	<record>
+	</test>
+	<test>
 		<id>5</id>
 		<id_p>5</id_p>
 		<laboratory_identifier>951185189-6</laboratory_identifier>
 		<date>06/21/2021</date>
-		<gender>Non-binary</gender>
 		<type>IgM</type>
-	</record>
-	<record>
+	</test>
+	<test>
 		<id>6</id>
 		<id_p>6</id_p>
 		<laboratory_identifier>857045139-3</laboratory_identifier>
 		<date>10/29/2020</date>
-		<gender>Genderqueer</gender>
 		<type>IgM</type>
-	</record>
-	<record>
+	</test>
+	<test>
 		<id>7</id>
 		<id_p>7</id_p>
 		<laboratory_identifier>656942133-6</laboratory_identifier>
 		<date>03/21/2021</date>
-		<gender>Non-binary</gender>
 		<type>IgM</type>
-	</record>
-	<record>
+	</test>
+	<test>
 		<id>8</id>
 		<id_p>8</id_p>
 		<laboratory_identifier>434262126-6</laboratory_identifier>
 		<date>08/21/2021</date>
-		<gender>Female</gender>
 		<type>IgM</type>
-	</record>
-	<record>
+	</test>
+	<test>
 		<id>9</id>
 		<id_p>9</id_p>
 		<laboratory_identifier>800167823-7</laboratory_identifier>
 		<date>01/13/2021</date>
-		<gender>Bigender</gender>
 		<type>IgM</type>
-	</record>
-	<record>
+	</test>
+	<test>
 		<id>10</id>
 		<id_p>10</id_p>
 		<laboratory_identifier>761585480-6</laboratory_identifier>
 		<date>09/30/2021</date>
-		<gender>Female</gender>
 		<type>IgM</type>
-	</record>
-</dataset>
+	</test>
+</tests>
