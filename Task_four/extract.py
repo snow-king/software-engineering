@@ -73,6 +73,7 @@ class DB_modification(object):
             }
             self.send_query(template, data, "edit")
 
+    # Move the first lessons of the given days of the week to the last place
     def swap_subject(self, *days):
         days = list(days)
         table = list(self.get_classroom())
