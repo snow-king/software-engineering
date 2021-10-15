@@ -8,7 +8,13 @@
               <xs:element type="xs:byte" name="id"/>
               <xs:element type="xs:string" name="first_name"/>
               <xs:element type="xs:string" name="last_name"/>
-              <xs:element type="xs:string" name="date"/>
+              <xs:element  name="date">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:pattern value="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$"/>
+                    </xs:restriction>
+                  </xs:simpleType>
+              </xs:element>
               <xs:element type="xs:long" name="police"/>
             </xs:sequence>
           </xs:complexType>
