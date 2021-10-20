@@ -1,0 +1,116 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "required": [
+        "tests"
+    ],
+    "properties": {
+        "tests": {
+            "$id": "#/properties/tests",
+            "type": "array",
+            "title": "The tests schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/tests/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/tests/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "required": [
+                            "id",
+                            "id_p",
+                            "laboratory_identifier",
+                            "date",
+                            "type",
+                            "accuracy"
+                        ],
+                        "properties": {
+                            "id": {
+                                "$id": "#/properties/tests/items/anyOf/0/properties/id",
+                                "type": "string",
+                                "title": "The id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                            },
+                            "id_p": {
+                                "$id": "#/properties/tests/items/anyOf/0/properties/id_p",
+                                "type": "string",
+                                "title": "The id_p schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                            },
+                            "laboratory_identifier": {
+                                "$id": "#/properties/tests/items/anyOf/0/properties/laboratory_identifier",
+                                "type": "string",
+                                "title": "The laboratory_identifier schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "539481680-8"
+                                ]
+                            },
+                            "date": {
+                                "$id": "#/properties/tests/items/anyOf/0/properties/date",
+                                "default": "",
+                                "description": "An explanation about the purpose of this instance.",
+                                "examples": [
+                                    "03/24/2021"
+                                ],
+                                "title": "The date schema",
+                                "pattern": "^(0?[1-9]|[12][0-9]|3[01])[\\/\\-](0?[1-9]|1[012])[\\/\\-]\\d{4}$",
+                                "type": "string"
+                            },
+                            "type": {
+                                "$id": "#/properties/tests/items/anyOf/0/properties/type",
+                                "default": "",
+                                "description": "An explanation about the purpose of this instance.",
+                                "title": "The type schema",
+                                "pattern": "IgG|IgM",
+                                "type": "string"
+                            },
+                            "accuracy": {
+                                "$id": "#/properties/tests/items/anyOf/0/properties/accuracy",
+                                "type": "object",
+                                "title": "The accuracy schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "required": [
+                                    "quantitative",
+                                    "quality"
+                                ],
+                                "properties": {
+                                    "quantitative": {
+                                        "$id": "#/properties/tests/items/anyOf/0/properties/accuracy/properties/quantitative",
+                                        "type": "string",
+                                        "title": "The quantitative schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "pattern": "\\d+"
+                                    },
+                                    "quality": {
+                                        "$id": "#/properties/tests/items/anyOf/0/properties/accuracy/properties/quality",
+                                        "type": "string",
+                                        "title": "The quality schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": ""
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
